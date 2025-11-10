@@ -195,16 +195,20 @@ Password: admin123
 ## 🎨 Screenshots
 
 ### Landing Page
-![Landing Page](./screenshots/landing.png)
+![Landing Page] <img width="1899" height="1068" alt="Screenshot 2025-11-10 233527" src="https://github.com/user-attachments/assets/4d175f4b-05ea-47d0-9b3a-7fceddb08b5e" />
+
 
 ### User Dashboard
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard] <img width="1781" height="907" alt="Screenshot 2025-11-10 234137" src="https://github.com/user-attachments/assets/f4a24de3-92f5-48d7-aec8-60d37fa2ce7f" />
+
 
 ### Virtual Card
-![Card](./screenshots/card.png)
+![Card] <img width="1066" height="809" alt="Screenshot 2025-11-10 234254" src="https://github.com/user-attachments/assets/a6e9f80e-c014-478c-9166-22f3decce324" />
+
 
 ### Admin Panel
-![Admin](./screenshots/admin.png)
+![Admin] <img width="659" height="829" alt="Screenshot 2025-11-10 234408" src="https://github.com/user-attachments/assets/971cf722-aae6-41c2-b46c-b3aaf3e20cbf" />
+
 
 ## 🧪 Testing
 
