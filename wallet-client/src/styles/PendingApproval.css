@@ -1,0 +1,209 @@
+/* src/styles/PendingApproval.css */
+
+.pending-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pending-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: float 15s infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(30px, 30px); }
+}
+
+.pending-card {
+  background: white;
+  border-radius: 24px;
+  padding: 60px 50px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pending-icon {
+  margin-bottom: 30px;
+}
+
+.clock-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  color: #667eea;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.clock-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.pending-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0 0 20px 0;
+}
+
+.pending-message {
+  font-size: 18px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+}
+
+.pending-info {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.info-item {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.info-item p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.5;
+  padding-top: 2px;
+}
+
+.pending-status {
+  margin-bottom: 30px;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #f59e0b;
+  border-radius: 50%;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.btn-back {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+
+.btn-back:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.pending-footer {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0;
+}
+
+.pending-footer a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pending-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .pending-card {
+    padding: 40px 30px;
+  }
+
+  .pending-title {
+    font-size: 26px;
+  }
+
+  .pending-message {
+    font-size: 16px;
+  }
+
+  .clock-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
